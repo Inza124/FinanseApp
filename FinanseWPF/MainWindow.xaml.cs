@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SQLite;
 
 namespace FinanseWPF
 {
@@ -20,9 +21,45 @@ namespace FinanseWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        string dbConnectionString = @"Data Source=database.db;Version=3;";
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+ 
+        }
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+            SQLiteConnection sqlite_conn = new SQLiteConnection(dbConnectionString);
+            try
+            {
+                sqlite_conn.Open();
+                String Query = "select * from User where token='" + this.passwordBox.Password +"' ";
+                SQLiteCommand sqlite_cmd = new SQLiteCommand(Query,sqlite_conn);
+
+                sqlite_cmd.ExecuteNonQuery();
+                SQLiteDataReader dr = sqlite_cmd.ExecuteReader();
+
+                int count = 0;
+                while (dr.Read())
+                {
+                    count++;
+                }
+                
+                if (count == 1)
+                {
+                    MessageBox.Show("Witaj");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message); 
+            }
+
         }
     }
 }

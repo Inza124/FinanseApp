@@ -5,4 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinanseWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525"/>
+        Title="MainWindow" Height="526" Width="1057">
+    <Grid MinWidth="250">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FFF3FBC1" Offset="1"/>
+                <GradientStop Color="#FFB0B0B0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Login" Content="Zaloguj" Margin="200,302,0,123" RenderTransformOrigin="0.144,2.972" Click="button_Click_1" HorizontalAlignment="Left" Width="200" FontFamily="Calibri" FontSize="36">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00FFD0" Offset="0.004"/>
+                    <GradientStop Color="#FF0ED8B3" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="200,200,0,0" VerticalAlignment="Top" MinWidth="300" MinHeight="50" RenderTransformOrigin="0.483,0.5" Height="60" Width="285"/>
+        <Label x:Name="label" Content="Token: " HorizontalAlignment="Left" Margin="70,200,0,0" VerticalAlignment="Top" Height="60" Width="119" FontSize="36"/>
+    </Grid>
+</Window>

@@ -5,15 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinanseWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="526" Width="1057">
-    <Grid MinWidth="250">
+        Title="MainWindow" Height="437" Width="749">
+    <Grid MinWidth="250" Margin="0,0,0,-1">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
                 <GradientStop Color="#FFF3FBC1" Offset="1"/>
                 <GradientStop Color="#FFB0B0B0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="Login" Content="Zaloguj" Margin="200,302,0,123" RenderTransformOrigin="0.144,2.972" Click="button_Click_1" HorizontalAlignment="Left" Width="200" FontFamily="Calibri" FontSize="36">
+        <Button x:Name="Login" Content="Zaloguj" Margin="146,270,0,67" Click="button_Click_1" HorizontalAlignment="Left" Width="239" FontFamily="Calibri" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF00FFD0" Offset="0.004"/>
@@ -21,7 +29,26 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="200,200,0,0" VerticalAlignment="Top" MinWidth="300" MinHeight="50" RenderTransformOrigin="0.483,0.5" Height="60" Width="285"/>
-        <Label x:Name="label" Content="Token: " HorizontalAlignment="Left" Margin="70,200,0,0" VerticalAlignment="Top" Height="60" Width="119" FontSize="36"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="134,175,0,0" VerticalAlignment="Top" MinWidth="300" MinHeight="50" RenderTransformOrigin="0.483,0.5" Height="60" Width="285" FontSize="36"/>
+        <Label x:Name="label" Content="Token: " HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Height="60" Width="119" FontSize="36" RenderTransformOrigin="0.832,0.5"/>
+        <Label x:Name="title" Content="TwójPieniądz" HorizontalAlignment="Left" Margin="15,5,0,0" VerticalAlignment="Top" Height="130" Width="565" FontSize="92" RenderTransformOrigin="0.5,0.5" FontFamily="Yu Gothic UI Semibold">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF441555" Offset="1"/>
+                    <GradientStop Color="#FF785378" Offset="0.017"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.331"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image x:Name="image" HorizontalAlignment="Center" Margin="451,155,10,0" Width="280" Source="cash.png" RenderTransformOrigin="0.5,0.397" Height="225" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

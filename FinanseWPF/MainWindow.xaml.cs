@@ -52,7 +52,8 @@ namespace FinanseWPF
                 
                 if (count == 1)
                 {
-                    MessageBox.Show("Witaj");
+                    Window1 program = new Window1();
+                    program.ShowDialog();
                 }
             }
             catch(Exception ex)

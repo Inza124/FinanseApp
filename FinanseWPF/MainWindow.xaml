@@ -50,7 +50,7 @@
         </Label>
         <Image x:Name="image" HorizontalAlignment="Center" Margin="461,145,0,0" Width="280" Source="cash.png" RenderTransformOrigin="0.5,0.397" Height="225" VerticalAlignment="Top"/>
         <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="95" VerticalAlignment="Top" Width="741" Margin="-10,25,0,0"/>
-        <Button x:Name="button" Content="Zacznij!" HorizontalAlignment="Left" Height="95" Margin="600,25,0,0" VerticalAlignment="Top" Width="141" FontSize="36" FontFamily="Forte" BorderBrush="#FFBB5E5E">
+        <Button x:Name="button" Content="Zacznij!" HorizontalAlignment="Left" Height="95" Margin="600,25,0,0" VerticalAlignment="Top" Width="141" FontSize="36" FontFamily="Forte" BorderBrush="#FFBB5E5E" Click="button_Click_2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFFDF1A2" Offset="0"/>

@@ -62,5 +62,11 @@ namespace FinanseWPF
             }
 
         }
+
+        private void button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window2 sign_up = new Window2();
+            sign_up.ShowDialog();
+        }
     }
 }

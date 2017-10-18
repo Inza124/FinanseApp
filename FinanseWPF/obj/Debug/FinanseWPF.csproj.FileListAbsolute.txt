@@ -23,3 +23,4 @@ C:\Users\Piotrek\source\repos\FinanseWPF\FinanseWPF\obj\Debug\FinanseWPF.csproj.
 C:\Users\Piotrek\source\repos\FinanseWPF\FinanseWPF\obj\Debug\FinanseWPF.csproj.CoreCompileInputs.cache
 C:\Users\Piotrek\source\repos\FinanseWPF\FinanseWPF\obj\Debug\FinanseWPF.exe
 C:\Users\Piotrek\source\repos\FinanseWPF\FinanseWPF\obj\Debug\FinanseWPF.pdb
+C:\Users\Piotrek\source\repos\FinanseWPF\FinanseWPF\obj\Debug\FinanseWPF.csprojResolveAssemblyReference.cache

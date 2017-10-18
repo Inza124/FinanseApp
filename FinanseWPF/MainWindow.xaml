@@ -21,7 +21,7 @@
                 <GradientStop Color="#FFB0B0B0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="Login" Content="Zaloguj" Margin="146,270,0,67" Click="button_Click_1" HorizontalAlignment="Left" Width="239" FontFamily="Calibri" FontSize="36">
+        <Button x:Name="Login" Content="Zaloguj" Margin="176,260,0,77" Click="button_Click_1" HorizontalAlignment="Left" Width="239" FontFamily="Calibri" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF00FFD0" Offset="0.004"/>
@@ -29,9 +29,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="134,175,0,0" VerticalAlignment="Top" MinWidth="300" MinHeight="50" RenderTransformOrigin="0.483,0.5" Height="60" Width="285" FontSize="36"/>
-        <Label x:Name="label" Content="Token: " HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Height="60" Width="119" FontSize="36" RenderTransformOrigin="0.832,0.5"/>
-        <Label x:Name="title" Content="TwójPieniądz" HorizontalAlignment="Left" Margin="15,5,0,0" VerticalAlignment="Top" Height="130" Width="565" FontSize="92" RenderTransformOrigin="0.5,0.5" FontFamily="Yu Gothic UI Semibold">
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="164,195,0,0" VerticalAlignment="Top" MinWidth="300" MinHeight="50" RenderTransformOrigin="0.483,0.5" Height="50" Width="285" FontSize="36"/>
+        <Label x:Name="label" Content="Token: " HorizontalAlignment="Left" Margin="40,185,0,0" VerticalAlignment="Top" Height="60" Width="119" FontSize="36" RenderTransformOrigin="0.832,0.5"/>
+        <Label x:Name="title" Content="Twój Pieniądz" HorizontalAlignment="Left" VerticalAlignment="Top" Height="130" Width="590" FontSize="82" RenderTransformOrigin="0.5,0.5" FontFamily="Yu Gothic UI Semibold" Margin="5,0,0,0">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -48,7 +48,22 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Image x:Name="image" HorizontalAlignment="Center" Margin="451,155,10,0" Width="280" Source="cash.png" RenderTransformOrigin="0.5,0.397" Height="225" VerticalAlignment="Top"/>
+        <Image x:Name="image" HorizontalAlignment="Center" Margin="461,145,0,0" Width="280" Source="cash.png" RenderTransformOrigin="0.5,0.397" Height="225" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="95" VerticalAlignment="Top" Width="741" Margin="-10,25,0,0"/>
+        <Button x:Name="button" Content="Zacznij!" HorizontalAlignment="Left" Height="95" Margin="600,25,0,0" VerticalAlignment="Top" Width="141" FontSize="36" FontFamily="Forte" BorderBrush="#FFBB5E5E">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFDF1A2" Offset="0"/>
+                    <GradientStop Color="#FFFFE752" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF4E56" Offset="0"/>
+                    <GradientStop Color="#FFFF89A9" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
 
     </Grid>
 </Window>

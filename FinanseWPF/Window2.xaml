@@ -79,7 +79,7 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
-        <Button x:Name="button" Content="Rejestruj" HorizontalAlignment="Left" Height="40" Margin="170,225,0,0" VerticalAlignment="Top" Width="140" FontSize="20" Background="#FFF15D5D"/>
+        <Button x:Name="button" Content="Rejestruj" HorizontalAlignment="Left" Height="40" Margin="170,225,0,0" VerticalAlignment="Top" Width="140" FontSize="20" Background="#FFF15D5D" Click="button_Click"/>
 
     </Grid>
 </Window>

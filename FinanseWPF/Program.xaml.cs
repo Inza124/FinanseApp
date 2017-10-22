@@ -22,6 +22,9 @@ namespace FinanseWPF
         public Window1()
         {
             InitializeComponent();
+            //int id = Model.UserID;
+            FinanseViewModel Model = new FinanseViewModel();
+            label3.Content = Model.WelcomeString(1);
         }
     }
 }

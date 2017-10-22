@@ -5,8 +5,161 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinanseWPF"
         mc:Ignorable="d"
-        Title="Window1" Height="592" Width="994">
+        Title="Window1" Height="672" Width="1159">
     <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="551" Margin="0,90,0,0" VerticalAlignment="Top" Width="240">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF31DCAE" Offset="0"/>
+                    <GradientStop Color="#FF6AAE70" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="1151">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFA1EDF9" Offset="0.008"/>
+                    <GradientStop Color="#FF35DCF7" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Button x:Name="button" Content="DODAJ" HorizontalAlignment="Left" Height="90" Margin="239,-1,0,-1" VerticalAlignment="Top" Width="165" FontSize="36" FontFamily="Leelawadee">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF838383"/>
+                        <GradientStop Color="#FF383838" Offset="0.992"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFB6EA6B" Offset="0"/>
+                        <GradientStop Color="#FF72B80F" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Border>
+        <Button x:Name="button1" Content="USUŃ" HorizontalAlignment="Left" Height="90" Margin="580,0,0,0" VerticalAlignment="Top" Width="165" FontSize="36" FontFamily="Leelawadee">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF838383"/>
+                    <GradientStop Color="#FF383838" Offset="0.992"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB6EA6B" Offset="0"/>
+                    <GradientStop Color="#FF72B80F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="button2" Content="EDYTUJ" HorizontalAlignment="Left" Height="90" Margin="410,0,0,0" VerticalAlignment="Top" Width="165" FontSize="36" FontFamily="Leelawadee" RenderTransformOrigin="-0.333,0.5">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF838383"/>
+                    <GradientStop Color="#FF383838" Offset="0.992"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB6EA6B" Offset="0"/>
+                    <GradientStop Color="#FF72B80F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="button3" Content="ARCHIWIZUJ" HorizontalAlignment="Left" Height="90" Margin="750,0,0,0" VerticalAlignment="Top" Width="225" FontSize="36" FontFamily="Leelawadee">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF838383"/>
+                    <GradientStop Color="#FF383838" Offset="0.992"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB6EA6B" Offset="0"/>
+                    <GradientStop Color="#FF72B80F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="41" Margin="240,600,0,0" VerticalAlignment="Top" Width="911" Background="#FF84EC6D"/>
+        <Label x:Name="label" Content="Środki: " HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Height="55" Width="185" FontSize="26" FontFamily="Segoe UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF778191" Offset="0.004"/>
+                    <GradientStop Color="#FF3B72D3" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="label_Copy" Content="Plany: " HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Height="55" Width="185" FontSize="26" FontFamily="Segoe UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF778191" Offset="0.004"/>
+                    <GradientStop Color="#FF3B72D3" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="label_Copy1" Content="Oszczędności: " HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Height="55" Width="185" FontSize="26" FontFamily="Segoe UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF778191" Offset="0.004"/>
+                    <GradientStop Color="#FF3B72D3" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="label_Copy2" Content="Wydatki: " HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Height="55" Width="185" FontSize="26" FontFamily="Segoe UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF778191" Offset="0.004"/>
+                    <GradientStop Color="#FF3B72D3" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="button4" Content="WYDATKI" HorizontalAlignment="Left" Margin="240,601,0,0" VerticalAlignment="Top" Width="140" Height="40" FontSize="22">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF7676" Offset="0"/>
+                    <GradientStop Color="#FFF93636" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button4_Copy" Content="PLANY" HorizontalAlignment="Left" Margin="380,601,0,0" VerticalAlignment="Top" Width="140" Height="40" FontSize="22">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF7676" Offset="0"/>
+                    <GradientStop Color="#FFF93636" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button4_Copy1" Content=" OSZCZĘDNOŚCI
+                " HorizontalAlignment="Left" Margin="520,600,0,0" VerticalAlignment="Top" Width="170" Height="40" FontSize="22">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF7676" Offset="0"/>
+                    <GradientStop Color="#FFF93636" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button4_Copy2" Content="WYLOGUJ" HorizontalAlignment="Left" Margin="981,600,0,0" VerticalAlignment="Top" Width="170" Height="40" FontSize="22">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC1BCBC" Offset="0"/>
+                    <GradientStop Color="#FF555555" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label1" Content="XXXXX" HorizontalAlignment="Left" Margin="103,126,0,0" VerticalAlignment="Top" Foreground="#FF28007E" FontSize="20" RenderTransformOrigin="-4.298,-0.405"/>
+        <Label x:Name="label1_Copy" Content="XXXXX" HorizontalAlignment="Left" Margin="85,291,0,0" VerticalAlignment="Top" Foreground="#FF28007E" FontSize="20" RenderTransformOrigin="-4.298,-0.405"/>
+        <Label x:Name="label1_Copy1" Content="XXXXX" HorizontalAlignment="Left" Margin="126,180,0,0" VerticalAlignment="Top" Foreground="#FF28007E" FontSize="20" RenderTransformOrigin="-4.298,-0.405"/>
+        <Label x:Name="label1_Copy2" Content="XXXXX" HorizontalAlignment="Left" Margin="171,236,0,0" VerticalAlignment="Top" Foreground="#FF28007E" FontSize="20" RenderTransformOrigin="-4.298,-0.405"/>
+        <Label x:Name="label2" Content="Witaj" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.842,-2.885" Height="40" Width="110" FontSize="22"/>
+        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="27,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-9.079,-2.692" Width="145" Height="44" FontSize="24">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF48554E" Offset="0"/>
+                    <GradientStop Color="#FF1ACD74" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
 
     </Grid>
 </Window>
